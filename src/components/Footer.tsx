@@ -43,7 +43,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-sm">
                 <MapPin className="w-4 h-4 mr-2 shrink-0" />
-                <span>Atendimento em toda região</span>
+                <ul className="ml-1 space-y-1">
+                  <li>Zona Norte</li>
+                  <li>Zona Sul</li>
+                  <li>Barra da Tijuca</li>
+                  <li>Recreio</li>
+                  <li>Jacarépaguá</li>
+                  <li>E Muitos outros</li>
+                </ul>
               </div>
               <div className="flex items-center text-sm">
                 <Clock className="w-4 h-4 mr-2 shrink-0" />

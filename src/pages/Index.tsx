@@ -15,7 +15,14 @@ const Index = () => {
           name="description" 
           content="Técnico especializado em conserto de geladeiras, freezers e máquinas de lavar. Atendimento 24h, garantia 6 meses, peças originais. Orçamento gratuito." 
         />
-        <meta name="keywords" content="técnico geladeira, conserto geladeira, assistência técnica, máquina lavar, freezer, refrigeração, Abel, ABELTEC" />
+        <meta name="keywords" content="técnico geladeira, conserto geladeira, troca de motor geladeira,
+        conserto geladeira electrolux,
+        conserto geladeira zona norte,
+        conserto de geladeira brastemp,
+        conserto de freezer, conserto de máquina de lavar, conserto de geladeira 24 horas,
+        conserto de geladeira zona sul, conserto de geladeira barra,
+        conserto de geladeira perto de mim, conserto de geladeira hoje, conserto geladeira emergência,
+         assistência técnica, máquina lavar, freezer, refrigeração, Abel, ABELTEC" />
         <link rel="canonical" href="https://www.abeltecrefrigeracao.com" />
         
         <meta property="og:title" content="ABELTEC - Assistência Técnica Geladeiras 24h" />
