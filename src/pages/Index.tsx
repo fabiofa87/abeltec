@@ -29,7 +29,7 @@ const Index = () => {
         <meta property="og:title" content="ABELTEC - Assistência Técnica Geladeiras 24h" />
         <meta property="og:description" content="Mais de 20 anos de experiência em conserto de eletrodomésticos. Atendimento 24h com garantia." />
         <meta property="og:type" content="business.business" />
-        <meta property="og:image" content="/hero-technician.jpg" />
+        <meta property="og:image" content="/hero-technician.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, MessageCircle, Star, Clock } from "lucide-react";
-import heroImage from "@/assets/hero-technician.jpg";
+import heroImage from "@/assets/hero-technician.png";
 
 const Hero = () => {
   return (
@@ -69,8 +69,8 @@ const Hero = () => {
           <div className="relative">
             <img 
               src={heroImage} 
-              alt="Técnico especializado em refrigeração realizando manutenção" 
-              className="rounded-2xl shadow-2xl w-full h-[400px] lg:h-[500px] object-cover"
+              alt="ABELTEC - Assistência Técnica especializada em geladeiras, máquinas de lavar, fogão - Emergência 24hrs" 
+              className="rounded-2xl shadow-2xl w-full h-[400px] lg:h-[500px] object-contain bg-white/5 backdrop-blur"
             />
           </div>
         </div>
