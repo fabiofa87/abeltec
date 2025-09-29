@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-secondary-foreground/80">
-              Mais de 15 anos oferecendo soluções em assistência técnica para geladeiras, freezers e máquinas de lavar.
+              Mais de 20 anos oferecendo soluções em assistência técnica para geladeiras, freezers e máquinas de lavar.
             </p>
           </div>
 

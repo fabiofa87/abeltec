@@ -27,7 +27,7 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl text-white/90 max-w-lg">
-                Técnico especializado com mais de 15 anos de experiência. 
+                Técnico especializado com mais de 20 anos de experiência. 
                 Atendimento rápido, garantia nos serviços e peças originais.
               </p>
             </div>

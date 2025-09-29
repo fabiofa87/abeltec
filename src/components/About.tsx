@@ -11,7 +11,7 @@ const About = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl font-bold text-foreground">
-                Mais de <span className="text-primary">15 Anos</span> de
+                Mais de <span className="text-primary">20 Anos</span> de
                 <br />Experiência em Refrigeração
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -51,7 +51,7 @@ const About = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 shrink-0"></div>
-                  <span><strong>Experiência comprovada:</strong> Mais de 15 anos no mercado de assistência técnica</span>
+                  <span><strong>Experiência comprovada:</strong> Mais de 20 anos no mercado de assistência técnica</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 shrink-0"></div>

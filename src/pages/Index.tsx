@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
 
 const Index = () => {
   return (
@@ -26,7 +27,7 @@ const Index = () => {
         <link rel="canonical" href="https://www.abeltecrefrigeracao.com" />
         
         <meta property="og:title" content="ABELTEC - Assistência Técnica Geladeiras 24h" />
-        <meta property="og:description" content="Mais de 15 anos de experiência em conserto de eletrodomésticos. Atendimento 24h com garantia." />
+        <meta property="og:description" content="Mais de 20 anos de experiência em conserto de eletrodomésticos. Atendimento 24h com garantia." />
         <meta property="og:type" content="business.business" />
         <meta property="og:image" content="/hero-technician.jpg" />
         
@@ -70,6 +71,7 @@ const Index = () => {
           <Hero />
           <Services />
           <About />
+          <Testimonials />
           <Contact />
         </main>
         <Footer />
