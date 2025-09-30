@@ -21,7 +21,7 @@ const services = [
     icon: WashingMachine,
     title: "Máquinas de Lavar",
     description: "Manutenção e reparo de máquinas de lavar roupas e lava e seca",
-    features: ["Troca de bomba d'água", "Correias e rolamentos", "Controle eletrônico", "Sistema de drenagem"]
+    features: ["Troca de bomba d'água", "Correias e rolamentos", "Controle eletrônico", "Sistema de drenagem", "Reforma mecânica"]
   },
   {
     icon: Wrench,
@@ -74,7 +74,7 @@ const Services = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <Card className="text-center p-6 bg-[image:var(--gradient-card)]">
             <Shield className="w-12 h-12 text-primary mx-auto mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Garantia de 6 Meses</h3>
+            <h3 className="text-lg font-semibold mb-2">Até 1 ano de garantia</h3>
             <p className="text-muted-foreground text-sm">Todos os serviços com garantia completa</p>
           </Card>
           

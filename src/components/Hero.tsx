@@ -27,7 +27,7 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl text-white/90 max-w-lg">
-                Técnico especializado com mais de 20 anos de experiência. 
+                Especializada em freezers e geladeiras Frost Free com mais de 20 anos de experiência. 
                 Atendimento rápido, garantia nos serviços e peças originais.
               </p>
             </div>
@@ -41,7 +41,7 @@ const Hero = () => {
               <Card className="bg-white/10 backdrop-blur border-white/20 p-4">
                 <Star className="w-8 h-8 text-accent mx-auto mb-2" />
                 <div className="text-lg font-semibold">Garantia</div>
-                <div className="text-sm text-white/80">6 Meses</div>
+                <div className="text-sm text-white/80">Até 1 ano</div>
               </Card>
               <Card className="bg-white/10 backdrop-blur border-white/20 p-4">
                 <MessageCircle className="w-8 h-8 text-accent mx-auto mb-2" />

@@ -63,7 +63,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Garantias</h4>
             <Card className="bg-blue-100 p-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-800">6 MESES</div>
+                <div className="text-2xl font-bold text-blue-800">Até 1 ano</div>
                 <div className="text-xs text-blue-600">de garantia em todos os serviços</div>
               </div>
             </Card>
@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm text-secondary-foreground/60">
             © 2024 ABELTEC Refrigeração. Todos os direitos reservados. | 
-            Técnico especializado em assistência técnica de eletrodomésticos
+            Especializada em assistência técnica de eletrodomésticos
           </p>
         </div>
       </div>

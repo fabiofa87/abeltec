@@ -59,7 +59,7 @@ const About = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 shrink-0"></div>
-                  <span><strong>Garantia nos serviços:</strong> 6 meses de garantia em todos os reparos</span>
+                  <span><strong>Garantia nos serviços:</strong> Até 1 ano de garantia em todos os reparos</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 shrink-0"></div>

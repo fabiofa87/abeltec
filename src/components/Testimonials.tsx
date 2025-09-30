@@ -94,7 +94,7 @@ const Testimonials = () => {
               + de 2.000 clientes atendidos
             </h3>
             <p className="text-muted-foreground text-sm">
-              Garantia de 6 meses • Peças originais • Atendimento 24h
+              Até 1 ano de garantia • Peças originais • Atendimento 24h
             </p>
           </div>
         </div>

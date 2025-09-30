@@ -14,7 +14,7 @@ const Index = () => {
         <title>ABELTEC - Assistência Técnica Geladeiras e Máquinas de Lavar - 24h</title>
         <meta 
           name="description" 
-          content="Técnico especializado em conserto de geladeiras, freezers e máquinas de lavar. Atendimento 24h, garantia 6 meses, peças originais. Orçamento gratuito." 
+          content="Técnico especializado em conserto de geladeiras, freezers e máquinas de lavar. Atendimento 24h, até 1 ano de garantia, peças originais. Orçamento gratuito." 
         />
         <meta name="keywords" content="técnico geladeira, conserto geladeira, troca de motor geladeira,
         conserto geladeira electrolux,
