@@ -87,7 +87,7 @@ const Services = () => {
           <Card className="text-center p-6 bg-[image:var(--gradient-card)]">
             <CheckCircle className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-lg font-semibold mb-2">Peças Originais</h3>
-            <p className="text-muted-foreground text-sm">Sempre utilizamos peças de qualidade</p>
+            <p className="text-muted-foreground text-sm">Sempre utilizamos peças originais</p>
           </Card>
         </div>
 
