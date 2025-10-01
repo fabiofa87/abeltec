@@ -28,7 +28,7 @@ const Hero = () => {
               
               <p className="text-xl text-white/90 max-w-lg">
                 Especializada em freezers e geladeiras Frost Free com mais de 20 anos de experiência. 
-                Atendimento rápido, garantia nos serviços e peças originais.
+                Atendimento rápido, garantia nos serviços com peças originais.
               </p>
             </div>
 
