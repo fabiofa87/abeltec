@@ -35,23 +35,29 @@ const Index = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
+            "@type": "ElectronicsRepairShop",
             "name": "ABELTEC Refrigeração",
-            "description": "Assistência técnica especializada em geladeiras, freezers e máquinas de lavar",
-            "serviceArea": "Rio de Janeiro, RJ",
-            "telephone": "21 98763-6363",
+            "url": "https://www.abeltecrefrigeracao.com.br",
+            "logo": "https://www.abeltecrefrigeracao.com.br/logo.png",
+            "description": "Assistência técnica especializada em geladeiras, freezers e máquinas de lavar no Rio de Janeiro e Grande Rio.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+5521987636363",
+              "contactType": "Atendimento ao cliente",
+              "areaServed": "Rio de Janeiro"
+            },
             "openingHours": "Mo-Su 00:00-24:00",
             "priceRange": "$$",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Serviços de Refrigeração",
+              "name": "Serviços de Reparo e Manutenção",
               "itemListElement": [
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Conserto de Geladeiras",
-                    "description": "Conserto de geladeiras de todas as marcas e modelos, atendemos 24 horas com garantia por escrito. Orçamento gratis."
+                    "description": "Reparo e manutenção de geladeiras e freezers de todas as marcas, como Brastemp, Electrolux e Consul."
                   }
                 },
                 {
@@ -59,7 +65,7 @@ const Index = () => {
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Conserto de Máquinas de Lavar",
-                    "description": "Conserto de máquinas de lavar roupas, todas as marcas e modelos. Atendimento 24 horas com garantia por escrito. Orçamento grátis."
+                    "description": "Conserto e manutenção de máquinas de lavar roupa de diversas marcas e modelos."
                   }
                 }
               ]
@@ -72,47 +78,13 @@ const Index = () => {
               "worstRating": "1"
             },
             "areaServed": [
-              "Zona Norte do Rio de Janeiro",
-              "Zona Sul do Rio de Janeiro",
-              "Tijuca",
-              "Méier",
-              "Botafogo",
-              "Copacabana",
-              "Barra da Tijuca",
-              "Méier",
-              "Recreio dos Bandeirantes",
-              "Barra da Tijuca",
-              "Jacarepaguá",
-              "Vila Isabel",
-              "Tijuca",
-              "Grajaú",
-              "Maracanã",
-              "Lins de Vasconcelos",
-              "Engenho de Dentro",
-              "Engenho Novo",
-              "Manguinhos",
-              "São Cristóvão",
-              "Flamengo",
-              "Laranjeiras",
-              "Botafogo",
-              "Urca",
-              "Humaitá",
-              "Glória",
-              "Catete",
-              "Centro do Rio de Janeiro",
-              "Ipanema",
-              "Leblon",
-              "Gávea",
-              "São Conrado",
-              "Barra da Tijuca",
-              "Recreio dos Bandeirantes",
-              "Jacarepaguá",
-              "Ilha do Governador",
-              "Glória",
-              "Catete",
-              "Cachambi"
-            ]
-          })}
+              { "@type": "AdministrativeArea", "name": "Rio de Janeiro, RJ" },
+              { "@type": "AdministrativeArea", "name": "Baixada Fluminense" },
+              { "@type": "AdministrativeArea", "name": "Zona Norte do Rio de Janeiro" },
+              { "@type": "AdministrativeArea", "name": "Zona Sul do Rio de Janeiro" },
+              { "@type": "AdministrativeArea", "name": "Zona Oeste do Rio de Janeiro" },
+              { "@type": "AdministrativeArea", "name": "Centro do Rio de Janeiro" }
+            ]})}
         </script>
       </Helmet>
       
