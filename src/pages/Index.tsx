@@ -60,7 +60,48 @@ const Index = () => {
                   }
                 }
               ]
-            }
+            },
+            "areaServed": [
+              "Zona Norte do Rio de Janeiro",
+              "Zona Sul do Rio de Janeiro",
+              "Tijuca",
+              "Méier",
+              "Botafogo",
+              "Copacabana",
+              "Barra da Tijuca",
+              "Méier",
+              "Recreio dos Bandeirantes",
+              "Barra da Tijuca",
+              "Jacarepaguá",
+              "Vila Isabel",
+              "Tijuca",
+              "Grajaú",
+              "Maracanã",
+              "Lins de Vasconcelos",
+              "Engenho de Dentro",
+              "Engenho Novo",
+              "Manguinhos",
+              "São Cristóvão",
+              "Flamengo",
+              "Laranjeiras",
+              "Botafogo",
+              "Urca",
+              "Humaitá",
+              "Glória",
+              "Catete",
+              "Centro do Rio de Janeiro",
+              "Ipanema",
+              "Leblon",
+              "Gávea",
+              "São Conrado",
+              "Barra da Tijuca",
+              "Recreio dos Bandeirantes",
+              "Jacarepaguá",
+              "Ilha do Governador",
+              "Glória",
+              "Catete",
+              "Cachambi"
+            ]
           })}
         </script>
       </Helmet>
