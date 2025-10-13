@@ -26,7 +26,7 @@ const Header = () => {
             <a href="tel:+5521987636363">
             <Button variant="whatsapp" size="sm">
               <Phone className="w-4 h-4 mr-2" />
-              Ligar Agora
+              Ligar Agora - (21) 98763-6363
             </Button>
             </a>
           </div>

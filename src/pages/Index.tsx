@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
+import Bairros from "@/components/Bairros";
 
 const Index = () => {
   return (
@@ -37,8 +38,8 @@ const Index = () => {
             "@type": "LocalBusiness",
             "name": "ABELTEC Refrigeração",
             "description": "Assistência técnica especializada em geladeiras, freezers e máquinas de lavar",
-            "serviceArea": "Região Metropolitana",
-            "telephone": "XX XXXXX-XXXX",
+            "serviceArea": "Rio de Janeiro, RJ",
+            "telephone": "21 98763-6363",
             "openingHours": "Mo-Su 00:00-24:00",
             "priceRange": "$$",
             "hasOfferCatalog": {
@@ -49,17 +50,26 @@ const Index = () => {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Conserto de Geladeiras"
+                    "name": "Conserto de Geladeiras",
+                    "description": "Conserto de geladeiras de todas as marcas e modelos, atendemos 24 horas com garantia por escrito. Orçamento gratis."
                   }
                 },
                 {
                   "@type": "Offer", 
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Reparo de Máquinas de Lavar"
+                    "name": "Conserto de Máquinas de Lavar",
+                    "description": "Conserto de máquinas de lavar roupas, todas as marcas e modelos. Atendimento 24 horas com garantia por escrito. Orçamento grátis."
                   }
                 }
               ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "75",
+              "bestRating": "5",
+              "worstRating": "1"
             },
             "areaServed": [
               "Zona Norte do Rio de Janeiro",
@@ -111,6 +121,7 @@ const Index = () => {
         <main>
           <Hero />
           <Services />
+          <Bairros />
           <About />
           <Testimonials />
           <Contact />
