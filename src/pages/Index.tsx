@@ -108,14 +108,7 @@ const Index = () => {
               "bestRating": "5",
               "worstRating": "1"
             },
-            "areaServed": [
-              { "@type": "AdministrativeArea", "name": "Rio de Janeiro, RJ" },
-              { "@type": "AdministrativeArea", "name": "Baixada Fluminense" },
-              { "@type": "AdministrativeArea", "name": "Zona Norte do Rio de Janeiro" },
-              { "@type": "AdministrativeArea", "name": "Zona Sul do Rio de Janeiro" },
-              { "@type": "AdministrativeArea", "name": "Zona Oeste do Rio de Janeiro" },
-              { "@type": "AdministrativeArea", "name": "Centro do Rio de Janeiro" }
-            ]})}
+            })}
         </script>
       </Helmet>
       
