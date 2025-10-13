@@ -15,7 +15,7 @@ const Index = () => {
         <title>ABELTEC - Assistência Técnica Geladeiras e Máquinas de Lavar - 24h</title>
         <meta 
           name="description" 
-          content="Técnico especializado em conserto de geladeiras, freezers e máquinas de lavar. Atendimento 24h, até 1 ano de garantia, peças originais. Orçamento gratuito." 
+          content="Consertamos sua geladeira hoje. Atendimento 24h, até 1 ano de garantia, peças originais. Orçamento grátis por telefone." 
         />
         <meta name="keywords" content="técnico geladeira, conserto geladeira, troca de motor geladeira,
         conserto geladeira electrolux,
@@ -27,7 +27,7 @@ const Index = () => {
          assistência técnica, máquina lavar, freezer, refrigeração, Abel, ABELTEC" />
         <link rel="canonical" href="https://www.abeltecrefrigeracao.com" />
         
-        <meta property="og:title" content="ABELTEC - Assistência Técnica Geladeiras 24h" />
+        <meta property="og:title" content="Conserto de Geladeiras Emergência - ABELTEC - Assistência Técnica Geladeiras 24h" />
         <meta property="og:description" content="Mais de 20 anos de experiência em conserto de eletrodomésticos. Atendimento 24h com garantia." />
         <meta property="og:type" content="business.business" />
         <meta property="og:image" content="/hero-technician.png" />
@@ -37,6 +37,8 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "ElectronicsRepairShop",
             "name": "ABELTEC Refrigeração",
+            "areaServed": ["Tijuca", "Leblon", "Copacabana", "Botafogo", "Ipanema", "Méier", "Barra da Tijuca", "Recreio", "Jacarepaguá", "Grajaú", "Flamengo", "Centro do Rio de Janeiro", "Zona Norte do Rio de Janeiro", 
+              "Zona Sul do Rio de Janeiro", "Ilha do Governador", "Cachambi", "Vila Isabel", "Maracanã", "Lins de Vasconcelos", "Engenho de Dentro", "Pilares", "Olaria", "Ramos", "Penha", "Brás de Pina", "Cordovil", "Freguesia", "Anil", "Curicica"],
             "url": "https://www.abeltecrefrigeracao.com.br",
             "logo": "https://www.abeltecrefrigeracao.com.br/logo.png",
             "description": "Assistência técnica especializada em geladeiras, freezers e máquinas de lavar no Rio de Janeiro e Grande Rio.",
