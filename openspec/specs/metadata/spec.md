@@ -27,3 +27,14 @@ All images SHALL have descriptive alt text for accessibility and SEO.
 - **Given** visible `<img>` tags in the application
 - **Then** they must have meaningful `alt` text describing the image content for accessibility and SEO.
 
+### Requirement: Meta Descriptions
+The application SHALL use conversion-optimized meta descriptions for key pages.
+
+#### Scenario: Home Page Urgency
+- **Given** the home page (`/`)
+- **Then** the meta description must start with a hook like "GELADEIRA PAROU?" to address immediate pain points and mention "24h".
+
+#### Scenario: Segment Logic
+- **Given** a segment page (like `/meier`)
+- **Then** the meta tags must be specific to that segment to improve CTR.
+

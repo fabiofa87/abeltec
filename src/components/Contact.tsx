@@ -1,10 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { 
-  Phone, 
-  MessageCircle, 
-  MapPin, 
-  Clock, 
+import {
+  Phone,
+  MessageCircle,
+  MapPin,
+  Clock,
   Mail,
   Star
 } from "lucide-react";
@@ -28,9 +28,9 @@ const Contact = () => {
             <h3 className="text-lg font-semibold mb-2">Telefone</h3>
             <p className="text-white/80 text-sm mb-4">(21) 98763-6363</p>
             <a href="tel:+5521987636363">
-            <Button variant="whatsapp" size="sm">
-              Ligar
-            </Button>
+              <Button variant="whatsapp" size="sm">
+                Ligar
+              </Button>
             </a>
           </Card>
 
@@ -48,7 +48,7 @@ const Contact = () => {
           <Card className="bg-white/10 backdrop-blur border-white/20 text-center p-6">
             <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
             <h3 className="text-lg font-semibold mb-2">Localização</h3>
-            <p className="text-white/80 text-sm mb-4">Atendemos toda região</p>
+            <p className="text-white/80 text-sm mb-4">Rio de Janeiro - RJ</p>
             <a
               href="https://share.google/h7XO36W8dZnaR3maF"
               target="_blank"
@@ -104,10 +104,10 @@ const Contact = () => {
                 </a>
               </Button>
               <a href="tel:+5521987636363">
-              <Button variant="destructive" size="xl">
-                <Phone className="w-5 h-5 mr-2" />
-                Ligar Agora
-              </Button>
+                <Button variant="destructive" size="xl">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Ligar Agora
+                </Button>
               </a>
             </div>
 

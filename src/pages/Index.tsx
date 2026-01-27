@@ -15,7 +15,7 @@ const Index = () => {
         <title>ABELTEC - Assistência Técnica Geladeiras e Máquinas de Lavar - 24h</title>
         <meta
           name="description"
-          content="Consertamos sua geladeira hoje. Atendimento 24h, até 1 ano de garantia, peças originais. Orçamento grátis por telefone."
+          content="GELADEIRA PAROU? Atendimento 24h inclusive aos domingos e feriados no Rio de Janeiro. Conserto de geladeiras e máquinas de lavar com até 1 ano de garantia."
         />
         <meta name="keywords" content="técnico geladeira, conserto geladeira, troca de motor geladeira,
         conserto geladeira electrolux,
