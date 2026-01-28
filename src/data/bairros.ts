@@ -12,7 +12,7 @@ export const allBairros = [
     "Quintino Bocaiúva", "Ramos", "Recreio dos Bandeirantes", "Riachuelo", "Ribeira", "Rio Comprido", "Rocha",
     "Rocha Miranda", "Sampaio", "São Conrado", "São Cristóvão", "São Francisco Xavier", "Tanque", "Taquara",
     "Tauá", "Tijuca", "Todos os Santos", "Tomás Coelho", "Turiaçu", "Urca", "Vaz Lobo", "Vicente de Carvalho",
-    "Vila da Penha", "Vila Isabel", "Vila Militar", "Vila Valqueire", "Zumbi"
+    "Vila da Penha", "Vila Isabel", "Vila Militar", "Vila Valqueire", "Zumbi", "Jardim Botanico"
 ];
 
 export const toSlug = (text: string) => {
