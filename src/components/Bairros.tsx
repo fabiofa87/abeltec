@@ -14,7 +14,7 @@ const bairros = [
 	"Leblon",
 	"Copacabana",
 	"Barra da Tijuca",
-	"Recreio",
+	"Recreio dos Bandeirantes",
 	"Jacarépaguá",
 ];
 

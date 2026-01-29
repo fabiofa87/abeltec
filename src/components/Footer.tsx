@@ -47,7 +47,7 @@ const Footer = () => {
                   <li>Zona Norte</li>
                   <li>Zona Sul</li>
                   <li>Barra da Tijuca</li>
-                  <li>Recreio</li>
+                  <li>Recreio dos Bandeirantes</li>
                   <li>Jacarépaguá</li>
                   <li>E Muitos outros</li>
                 </ul>
@@ -77,7 +77,7 @@ const Footer = () => {
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm text-secondary-foreground/60">
-            © 2024 ABELTEC Refrigeração. Todos os direitos reservados. | 
+            © 2024 ABELTEC Refrigeração. Todos os direitos reservados. |
             Especializada em assistência técnica de eletrodomésticos
           </p>
         </div>
