@@ -62,16 +62,16 @@ const NeighborhoodPage = () => {
                 <main className="flex-grow">
                     <section className="py-20 bg-[image:var(--gradient-hero)] text-white text-center">
                         <div className="container mx-auto px-4">
-                            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-heading">
                                 Conserto de Geladeira em <span className="text-accent">{bairro}</span>
                             </h1>
-                            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
+                            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8 font-body">
                                 Atendimento prioritário para o bairro {bairro} e adjacências.
                                 Seu técnico está a poucos minutos de distância.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button variant="whatsapp" size="xl">
-                                    <MessageCircle className="w-5 h-5 mr-2" />
+                                    <MessageCircle className="w-5 h-5 mr-2" aria-hidden="true" />
                                     <a
                                         href={`https://wa.me/5521987636363?text=Olá,%20sou%20de%20${bairro}%20e%20preciso%20de%20conserto%20na%20geladeira`}
                                         target="_blank"
@@ -82,7 +82,7 @@ const NeighborhoodPage = () => {
                                 </Button>
                                 <a href="tel:+5521987636363">
                                     <Button variant="cta" size="xl">
-                                        <Phone className="w-5 h-5 mr-2" />
+                                        <Phone className="w-5 h-5 mr-2" aria-hidden="true" />
                                         Ligar Agora
                                     </Button>
                                 </a>
@@ -93,20 +93,20 @@ const NeighborhoodPage = () => {
                     <section className="py-16 bg-background">
                         <div className="container mx-auto px-4">
                             <div className="grid md:grid-cols-3 gap-8">
-                                <div className="text-center p-6 border rounded-xl shadow-sm">
-                                    <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-                                    <h3 className="text-xl font-semibold mb-2">Atendimento com Urgência</h3>
-                                    <p className="text-muted-foreground">Equipe dedicada rodando na região de {bairro}.</p>
+                                <div className="text-center p-6 border rounded-xl shadow-sm transition-transform hover:-translate-y-1">
+                                    <Clock className="w-12 h-12 text-primary mx-auto mb-4" aria-hidden="true" />
+                                    <h3 className="text-xl font-semibold mb-2 font-heading">Atendimento com Urgência</h3>
+                                    <p className="text-muted-foreground font-body">Equipe dedicada rodando na região de {bairro}.</p>
                                 </div>
-                                <div className="text-center p-6 border rounded-xl shadow-sm">
-                                    <CheckCircle className="w-12 h-12 text-primary mx-auto mb-4" />
-                                    <h3 className="text-xl font-semibold mb-2">Peças Originais</h3>
-                                    <p className="text-muted-foreground">Trabalhamos com peças originais e de alta qualidade.</p>
+                                <div className="text-center p-6 border rounded-xl shadow-sm transition-transform hover:-translate-y-1">
+                                    <CheckCircle className="w-12 h-12 text-primary mx-auto mb-4" aria-hidden="true" />
+                                    <h3 className="text-xl font-semibold mb-2 font-heading">Peças Originais</h3>
+                                    <p className="text-muted-foreground font-body">Trabalhamos com peças originais e de alta qualidade.</p>
                                 </div>
-                                <div className="text-center p-6 border rounded-xl shadow-sm">
-                                    <Phone className="w-12 h-12 text-primary mx-auto mb-4" />
-                                    <h3 className="text-xl font-semibold mb-2">Plantão 24h</h3>
-                                    <p className="text-muted-foreground">Atendimento a qualquer hora, inclusive domingos.</p>
+                                <div className="text-center p-6 border rounded-xl shadow-sm transition-transform hover:-translate-y-1">
+                                    <Phone className="w-12 h-12 text-primary mx-auto mb-4" aria-hidden="true" />
+                                    <h3 className="text-xl font-semibold mb-2 font-heading">Plantão 24h</h3>
+                                    <p className="text-muted-foreground font-body">Atendimento a qualquer hora, inclusive domingos.</p>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@ const NeighborhoodPage = () => {
 
                     <section className="py-16 bg-muted/30">
                         <div className="container mx-auto px-4 max-w-3xl">
-                            <h2 className="text-3xl font-bold text-center mb-8">Dúvidas Frequentes em {bairro}</h2>
+                            <h2 className="text-3xl font-bold text-center mb-8 font-heading">Dúvidas Frequentes em {bairro}</h2>
                             <Accordion type="single" collapsible className="w-full">
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger>Vocês atendem no bairro {bairro}?</AccordionTrigger>
