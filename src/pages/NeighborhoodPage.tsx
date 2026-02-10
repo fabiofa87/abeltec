@@ -5,6 +5,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, Clock, CheckCircle } from "lucide-react";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
 import { getBairroBySlug } from "@/data/bairros";
 
 const NeighborhoodPage = () => {
@@ -33,6 +39,22 @@ const NeighborhoodPage = () => {
                 {/* Coordinates could be dynamic if we had a database, but sticking to RJ center is acceptable for now or removing tailored coords */}
                 <meta name="geo.position" content="-22.9068;-43.1729" />
                 <meta name="ICBM" content="-22.9068, -43.1729" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": `Conserto de Geladeira em ${bairro}`,
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "ABELTEC Refrigeração"
+                        },
+                        "areaServed": {
+                            "@type": "AdministrativeArea",
+                            "name": bairro
+                        },
+                        "description": `Assistência técnica especializada em geladeiras no bairro ${bairro}. Atendimento 24h.`,
+                    })}
+                </script>
             </Helmet>
 
             <div className="min-h-screen flex flex-col">
@@ -87,6 +109,44 @@ const NeighborhoodPage = () => {
                                     <p className="text-muted-foreground">Atendimento a qualquer hora, inclusive domingos.</p>
                                 </div>
                             </div>
+                        </div>
+                    </section>
+
+                    <section className="py-16 bg-muted/30">
+                        <div className="container mx-auto px-4 max-w-3xl">
+                            <h2 className="text-3xl font-bold text-center mb-8">Dúvidas Frequentes em {bairro}</h2>
+                            <Accordion type="single" collapsible className="w-full">
+                                <AccordionItem value="item-1">
+                                    <AccordionTrigger>Vocês atendem no bairro {bairro}?</AccordionTrigger>
+                                    <AccordionContent>
+                                        Sim! Temos técnicos especializados posicionados estrategicamente perto de {bairro} para garantir um atendimento no mesmo dia.
+                                    </AccordionContent>
+                                </AccordionItem>
+                                <AccordionItem value="item-2">
+                                    <AccordionTrigger>O orçamento é gratuito?</AccordionTrigger>
+                                    <AccordionContent>
+                                        Sim, realizamos o orçamento gratuitamente no local. Você só paga se aprovar o serviço.
+                                    </AccordionContent>
+                                </AccordionItem>
+                                <AccordionItem value="item-3">
+                                    <AccordionTrigger>Qual o tempo de garantia?</AccordionTrigger>
+                                    <AccordionContent>
+                                        Oferecemos garantia estendida de até 1 ano em nossos serviços, proporcionando total segurança e tranquilidade para você.
+                                    </AccordionContent>
+                                </AccordionItem>
+                                <AccordionItem value="item-4">
+                                    <AccordionTrigger>Quais formas de pagamento são aceitas?</AccordionTrigger>
+                                    <AccordionContent>
+                                        Aceitamos dinheiro, PIX, e cartões de crédito e débito. Parcelamos serviços maiores conforme necessidade.
+                                    </AccordionContent>
+                                </AccordionItem>
+                                <AccordionItem value="item-5">
+                                    <AccordionTrigger>Trabalham com quais marcas?</AccordionTrigger>
+                                    <AccordionContent>
+                                        Somos especialistas em todas as principais marcas nacionais e importadas, incluindo Brastemp, Electrolux, Consul, LG, Samsung e Bosch.
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </Accordion>
                         </div>
                     </section>
                 </main>

@@ -1,4 +1,3 @@
-
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -6,6 +5,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Duplicated from src/data/bairros.ts to avoid TS compilation issues in this script
 const allBairros = [
     "Abolição", "Água Santa", "Alto da Boa Vista", "Andaraí", "Anil", "Bancários", "Barra da Tijuca", "Benfica",
     "Bento Ribeiro", "Bonsucesso", "Botafogo", "Brás de Pina", "Cachambi", "Cacuia", "Campinho", "Cascadura",
@@ -35,31 +35,34 @@ const toSlug = (text) => {
         .replace(/--+/g, "-");
 };
 
-const DOMAIN = 'https://www.abeltecrefrigeracao.com';
+const BASE_URL = 'https://www.abeltecrefrigeracao.com';
 
 const generateSitemap = () => {
-    const staticUrls = [
-        '/',
-        '/meier',
+    const staticPages = [
+        '',
         '/maquina-de-lavar'
     ];
 
-    const neighborhoodUrls = allBairros.map(bairro => `/bairros/${toSlug(bairro)}`);
-    const allUrls = [...staticUrls, ...neighborhoodUrls];
+    const neighborhoodPages = allBairros.map(bairro => `/bairros/${toSlug(bairro)}`);
 
-    const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+    const allRoutes = [...staticPages, ...neighborhoodPages];
+
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allUrls.map(url => `  <url>
-    <loc>${DOMAIN}${url}</loc>
+${allRoutes.map(route => `
+  <url>
+    <loc>${BASE_URL}${route}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>${url === '/' ? '1.0' : '0.8'}</priority>
-  </url>`).join('\n')}
+    <priority>${route === '' ? '1.0' : '0.8'}</priority>
+  </url>`).join('')}
 </urlset>`;
 
     const publicDir = path.resolve(__dirname, '../public');
-    fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapContent);
-    console.log(`Sitemap generated with ${allUrls.length} URLs`);
+    const sitemapPath = path.join(publicDir, 'sitemap.xml');
+
+    fs.writeFileSync(sitemapPath, sitemap);
+    console.log(`✅ Sitemap generated at ${sitemapPath} with ${allRoutes.length} URLs`);
 };
 
 generateSitemap();
