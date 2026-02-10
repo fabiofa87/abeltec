@@ -75,7 +75,7 @@ const Contact = () => {
         <Card className="bg-white/10 backdrop-blur border-white/30 max-w-4xl mx-auto">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl text-white font-bold">Solicite seu Orçamento Gratuito</CardTitle>
-            <p className="text-white text-lg">Atendimento rápido e profissional para seus eletrodomésticos</p>
+            <p className="text-white text-lg">Atendimento rápido e profissional para sua geladeira e máquina de lavar</p>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="grid md:grid-cols-3 gap-6 text-center">
@@ -92,7 +92,7 @@ const Contact = () => {
               <div className="space-y-2">
                 <div className="text-3xl font-bold text-accent">3</div>
                 <div className="text-lg font-semibold">Reparo</div>
-                <div className="text-sm text-white/80">Serviço com garantia</div>
+                <div className="text-sm text-white/80">Serviço com garantia escrita</div>
               </div>
             </div>
 

@@ -19,15 +19,15 @@ const Hero = () => {
                 </div>
                 <span className="text-accent font-semibold">4.9/5 - Mais de 500 clientes atendidos</span>
               </div>
-              
+
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Assistência Técnica em
                 <span className="text-accent"> Geladeiras</span> e
                 <span className="text-accent"> Máquinas</span>
               </h1>
-              
+
               <p className="text-xl text-white/90 max-w-lg">
-                Especializada em freezers e geladeiras Frost Free com mais de 20 anos de experiência. 
+                Especializada em freezers e geladeiras Frost Free com mais de 20 anos de experiência.
                 Atendimento rápido, garantia nos serviços com peças originais.
               </p>
             </div>
@@ -40,7 +40,7 @@ const Hero = () => {
               </Card>
               <Card className="bg-white/10 backdrop-blur border-white/20 p-4">
                 <Star className="w-8 h-8 text-accent mx-auto mb-2" />
-                <div className="text-lg font-semibold">Garantia</div>
+                <div className="text-lg font-semibold">Garantia por escrito</div>
                 <div className="text-sm text-white/80">Até 1 ano</div>
               </Card>
               <Card className="bg-white/10 backdrop-blur border-white/20 p-4">
@@ -54,22 +54,22 @@ const Hero = () => {
               <Button variant="whatsapp" size="xl" className="flex-1 sm:flex-none">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 <a href="https://wa.me/5521987636363" target="_blank" rel="noopener noreferrer">
-                WhatsApp - Orçamento
+                  WhatsApp - Orçamento
                 </a>
               </Button>
               <a href="tel:+5521987636363">
                 <Button variant="cta" size="xl" className="flex-1 sm:flex-none">
                   <Phone className="w-5 h-5 mr-2" />
-                    Ligar Agora
+                  Ligar Agora
                 </Button>
               </a>
             </div>
           </div>
 
           <div className="relative">
-            <img 
-              src={heroImage} 
-              alt="ABELTEC - Assistência Técnica especializada em geladeiras, máquinas de lavar, fogão - Emergência 24hrs" 
+            <img
+              src={heroImage}
+              alt="ABELTEC - Assistência Técnica especializada em geladeiras, máquinas de lavar, fogão - Emergência 24hrs"
               className="rounded-2xl shadow-2xl w-full h-[400px] lg:h-[500px] object-contain bg-white/5 backdrop-blur"
             />
           </div>

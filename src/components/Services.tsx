@@ -1,11 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { 
-  Snowflake, 
-  WashingMachine, 
-  Wrench, 
-  Shield, 
-  Clock, 
+import {
+  Snowflake,
+  WashingMachine,
+  Wrench,
+  Shield,
+  Clock,
   CheckCircle,
   Phone
 } from "lucide-react";
@@ -40,7 +40,7 @@ const Services = () => {
             <span className="text-primary">Nossos Serviços</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Especialistas em assistência técnica de eletrodomésticos com garantia e qualidade
+            Especialistas em assistência técnica de geladeiras e máquinas de lavar com garantia por escrito e qualidade
           </p>
         </div>
 
@@ -77,13 +77,13 @@ const Services = () => {
             <h3 className="text-lg font-semibold mb-2">Até 1 ano de garantia</h3>
             <p className="text-muted-foreground text-sm">Todos os serviços com garantia completa</p>
           </Card>
-          
+
           <Card className="text-center p-6 bg-[image:var(--gradient-card)]">
             <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-lg font-semibold mb-2">Atendimento 24h</h3>
             <p className="text-muted-foreground text-sm">Emergências e agendamentos</p>
           </Card>
-          
+
           <Card className="text-center p-6 bg-[image:var(--gradient-card)]">
             <CheckCircle className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-lg font-semibold mb-2">Peças Originais</h3>
@@ -93,10 +93,10 @@ const Services = () => {
 
         <div className="text-center">
           <a href="tel:+5521987636363">
-          <Button variant="cta" size="xl">
-            <Phone className="w-5 h-5 mr-2" />
-            Solicitar Orçamento Gratuito
-          </Button>
+            <Button variant="cta" size="xl">
+              <Phone className="w-5 h-5 mr-2" />
+              Solicitar Orçamento Gratuito
+            </Button>
           </a>
         </div>
       </div>

@@ -33,7 +33,7 @@ const Index = () => {
         <meta name="ICBM" content="-22.9068, -43.1729" />
 
         <meta property="og:title" content="Conserto de Geladeiras Emergência - ABELTEC - Assistência Técnica Geladeiras 24h" />
-        <meta property="og:description" content="Mais de 20 anos de experiência em conserto de eletrodomésticos. Atendimento 24h com garantia." />
+        <meta property="og:description" content="Mais de 20 anos de experiência em conserto de geladeiras e máquinas de lavar. Atendimento 24h com garantia." />
         <meta property="og:type" content="business.business" />
         <meta property="og:image" content="/hero-technician.png" />
 

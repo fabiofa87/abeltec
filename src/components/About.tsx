@@ -15,7 +15,7 @@ const About = () => {
                 <br />Experiência em Refrigeração
               </h2>
               <p className="text-xl text-muted-foreground">
-                A Abeltec é especializada em assistência técnica de geladeiras, freezers e máquinas de lavar. 
+                A Abeltec é especializada em assistência técnica de geladeiras, freezers e máquinas de lavar.
                 Com vasta experiência no mercado, oferece atendimento personalizado e soluções eficientes para sua casa.
               </p>
             </div>
@@ -26,19 +26,19 @@ const About = () => {
                 <div className="text-2xl font-bold text-foreground">500+</div>
                 <div className="text-sm text-muted-foreground">Clientes Atendidos</div>
               </Card>
-              
+
               <Card className="text-center p-6 bg-[image:var(--gradient-card)]">
                 <Award className="w-10 h-10 text-primary mx-auto mb-3" />
                 <div className="text-2xl font-bold text-foreground">15+</div>
                 <div className="text-sm text-muted-foreground">Anos de Experiência</div>
               </Card>
-              
+
               <Card className="text-center p-6 bg-[image:var(--gradient-card)]">
                 <Clock className="w-10 h-10 text-primary mx-auto mb-3" />
                 <div className="text-2xl font-bold text-foreground">24h</div>
                 <div className="text-sm text-muted-foreground">Atendimento Emergencial</div>
               </Card>
-              
+
               <Card className="text-center p-6 bg-[image:var(--gradient-card)]">
                 <Star className="w-10 h-10 text-primary mx-auto mb-3" />
                 <div className="text-2xl font-bold text-foreground">4.9★</div>
@@ -59,7 +59,7 @@ const About = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 shrink-0"></div>
-                  <span><strong>Garantia nos serviços:</strong> Até 1 ano de garantia em todos os reparos</span>
+                  <span><strong>Garantia escrita nos serviços:</strong> Até 1 ano de garantia escrita em todos os reparos</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 shrink-0"></div>
@@ -77,9 +77,9 @@ const About = () => {
           </div>
 
           <div className="relative">
-            <img 
-              src={appliancesImage} 
-              alt="Eletrodomésticos atendidos pela ABELTEC - Geladeiras, freezers e máquinas de lavar" 
+            <img
+              src={appliancesImage}
+              alt="Eletrodomésticos atendidos pela ABELTEC - Geladeiras, freezers e máquinas de lavar"
               className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
             />
             <Card className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur p-4">

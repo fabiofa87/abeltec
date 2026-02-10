@@ -16,6 +16,7 @@ const bairros = [
 	"Barra da Tijuca",
 	"Recreio dos Bandeirantes",
 	"Jacarépaguá",
+	"Ilha do Governador"
 ];
 
 import { allBairros } from "@/data/bairros";
@@ -33,31 +34,12 @@ const Bairros = () => {
 					</p>
 				</div>
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-					{bairros.map((bairro, idx) => (
+					{allBairros.map((bairro, idx) => (
 						<div key={idx} className="bg-[image:var(--gradient-card)] shadow-[var(--shadow-card)] rounded-xl p-8 text-center flex flex-col items-center justify-center">
 							<h3 className="text-xl font-semibold text-foreground mb-2">{bairro}</h3>
 							<p className="text-muted-foreground text-sm">Conserto de Geladeiras {bairro}</p>
 						</div>
 					))}
-				</div>
-
-				<div className="max-w-3xl mx-auto">
-					<Accordion type="single" collapsible>
-						<AccordionItem value="item-1">
-							<AccordionTrigger className="text-center justify-center text-muted-foreground hover:text-primary">
-								Ver lista completa de todos os bairros atendidos
-							</AccordionTrigger>
-							<AccordionContent>
-								<div className="flex flex-wrap justify-center gap-2 text-sm text-white py-4">
-									{allBairros.map((bairro, idx) => (
-										<span key={idx} className="bg-primary px-2 py-1 rounded-md">
-											{bairro}
-										</span>
-									))}
-								</div>
-							</AccordionContent>
-						</AccordionItem>
-					</Accordion>
 				</div>
 			</div>
 		</section>

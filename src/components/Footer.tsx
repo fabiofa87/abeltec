@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm text-secondary-foreground/60">
             © 2024 ABELTEC Refrigeração. Todos os direitos reservados. |
-            Especializada em assistência técnica de eletrodomésticos
+            Especializada em assistência técnica de geladeiras e máquinas de lavar
           </p>
         </div>
       </div>
