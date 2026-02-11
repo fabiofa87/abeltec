@@ -1,8 +1,9 @@
-import { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useMemo } from "react";
+import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NotFound from "@/pages/NotFound";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, Clock, CheckCircle, MapPin } from "lucide-react";
 import {
@@ -15,47 +16,108 @@ import { getNeighborhoodData } from "@/data/neighborhoodsData";
 
 const NeighborhoodPage = () => {
     const { slug } = useParams();
-    const navigate = useNavigate();
-
-    // Use the new data source
     const neighborhoodData = slug ? getNeighborhoodData(slug) : null;
     const bairroName = neighborhoodData?.name || "";
+    const baseUrl = "https://www.abeltecrefrigeracao.com";
+    const canonicalPath = neighborhoodData ? `/bairros/${neighborhoodData.slug}` : "";
+    const canonicalUrl = `${baseUrl}${canonicalPath}`;
+    const ogImageUrl = `${baseUrl}/placeholder.svg`;
 
-    useEffect(() => {
+    const faqItems = useMemo(() => {
         if (!neighborhoodData) {
-            navigate("/404");
+            return [];
         }
-    }, [neighborhoodData, navigate]);
 
-    if (!neighborhoodData) return null;
+        return [
+            {
+                question: `Vocês atendem no bairro ${bairroName}?`,
+                answer: `Sim! Temos técnicos especializados ${neighborhoodData.zones.length > 0 ? `na ${neighborhoodData.zones[0]} ` : ""}posicionados estrategicamente perto de ${bairroName} para garantir um atendimento no mesmo dia.`,
+            },
+            {
+                question: "O orçamento é gratuito?",
+                answer: "Sim, realizamos o orçamento gratuitamente no local. Você só paga se aprovar o serviço.",
+            },
+            {
+                question: "Qual o tempo de garantia?",
+                answer: "Oferecemos garantia estendida de até 1 ano em nossos serviços, proporcionando total segurança e tranquilidade para você.",
+            },
+            {
+                question: "Quais formas de pagamento são aceitas?",
+                answer: "Aceitamos dinheiro, PIX, e cartões de crédito e débito. Parcelamos serviços maiores conforme necessidade.",
+            },
+            {
+                question: "Trabalham com quais marcas?",
+                answer: "Somos especialistas em todas as principais marcas nacionais e importadas, incluindo Brastemp, Electrolux, Consul, LG, Samsung e Bosch.",
+            },
+        ];
+    }, [bairroName, neighborhoodData]);
+
+    if (!neighborhoodData) {
+        return <NotFound />;
+    }
 
     return (
         <>
             <Helmet>
-                <title>Conserto de Geladeira em {bairroName} - Chegamos em {neighborhoodData.avgArrival} | ABELTEC</title>
+                <title>Conserto de Geladeira em {bairroName} 24h - Chegamos em {neighborhoodData.avgArrival} | ABELTEC</title>
                 <meta
                     name="description"
-                    content={`Mora em ${bairroName}? ${neighborhoodData.description} Chegamos em ${neighborhoodData.avgArrival}! Técnicos especializados na região. Atendimento 24h.`}
+                    content={`Conserto de geladeira 24h em ${bairroName}. ${neighborhoodData.description} Chegamos em ${neighborhoodData.avgArrival} e atendemos com garantia por escrito.`}
                 />
+                <link rel="canonical" href={canonicalUrl} />
+                {neighborhoodData.isFallback ? (
+                    <meta name="robots" content="noindex,follow" />
+                ) : (
+                    <meta name="robots" content="index,follow" />
+                )}
                 <meta name="geo.region" content="BR-RJ" />
                 <meta name="geo.placename" content={`Rio de Janeiro - ${bairroName}`} />
                 {/* Coordinates could be dynamic if we had a database, but sticking to RJ center is acceptable for now or removing tailored coords */}
                 <meta name="geo.position" content="-22.9068;-43.1729" />
                 <meta name="ICBM" content="-22.9068, -43.1729" />
+                <meta property="og:title" content={`Conserto de Geladeira em ${bairroName} 24h | ABELTEC`} />
+                <meta property="og:description" content={`Atendimento 24h em ${bairroName} com técnicos especializados. Chegada média em ${neighborhoodData.avgArrival}.`} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={canonicalUrl} />
+                <meta property="og:image" content={ogImageUrl} />
+                <meta property="og:image:alt" content={`Conserto de geladeira em ${bairroName} com atendimento 24h`} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={`Conserto de Geladeira em ${bairroName} 24h | ABELTEC`} />
+                <meta name="twitter:description" content={`Atendimento 24h em ${bairroName}. Chegamos em ${neighborhoodData.avgArrival} com garantia por escrito.`} />
+                <meta name="twitter:image" content={ogImageUrl} />
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "Service",
                         "name": `Conserto de Geladeira em ${bairroName}`,
+                        "url": canonicalUrl,
                         "provider": {
                             "@type": "LocalBusiness",
-                            "name": "ABELTEC Refrigeração"
+                            "name": "ABELTEC Refrigeração",
+                            "url": baseUrl,
+                            "telephone": "+5521987636363",
+                            "openingHours": "Mo-Su 00:00-24:00",
+                            "priceRange": "$$",
                         },
                         "areaServed": {
                             "@type": "AdministrativeArea",
                             "name": bairroName
                         },
                         "description": neighborhoodData.description,
+                    })}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": faqItems.map((item) => ({
+                            "@type": "Question",
+                            "name": item.question,
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": item.answer,
+                            },
+                        })),
                     })}
                 </script>
             </Helmet>

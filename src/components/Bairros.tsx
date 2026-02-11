@@ -1,30 +1,9 @@
-import React from "react";
-import {
-	Accordion,
-	AccordionContent,
-	AccordionItem,
-	AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const bairros = [
-	"Méier",
-	"Tijuca",
-	"Grajaú",
-	"Ipanema",
-	"Leblon",
-	"Copacabana",
-	"Barra da Tijuca",
-	"Recreio dos Bandeirantes",
-	"Jacarépaguá",
-	"Ilha do Governador"
-];
-
 import { Link } from "react-router-dom";
 import { allBairros, toSlug } from "@/data/bairros";
 
 const Bairros = () => {
 	return (
-		<section className="py-20 bg-background relative overflow-hidden">
+		<section id="bairros" className="py-20 bg-background relative overflow-hidden">
 			<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent opacity-50" />
 			<div className="container mx-auto px-4 relative z-10">
 				<div className="text-center mb-16">

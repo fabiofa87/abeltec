@@ -74,7 +74,7 @@ const Contact = () => {
 
         <Card className="bg-white/10 backdrop-blur border-white/30 max-w-4xl mx-auto">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl text-white font-bold">Solicite seu Orçamento Gratuito</CardTitle>
+            <CardTitle className="text-2xl text-white font-bold">Solicite seu Orçamento Por Telefone</CardTitle>
             <p className="text-white text-lg">Atendimento rápido e profissional para sua geladeira e máquina de lavar</p>
           </CardHeader>
           <CardContent className="space-y-6">

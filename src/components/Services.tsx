@@ -95,7 +95,7 @@ const Services = () => {
           <a href="tel:+5521987636363">
             <Button variant="cta" size="xl">
               <Phone className="w-5 h-5 mr-2" />
-              Solicitar Orçamento Gratuito
+              Solicitar Orçamento Por Telefone
             </Button>
           </a>
         </div>

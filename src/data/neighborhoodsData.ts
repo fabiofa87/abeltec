@@ -8,6 +8,7 @@ export interface NeighborhoodData {
     avgArrival: string; // e.g. "20-30 min"
     landmarks: string[];
     zones: string[]; // e.g. "Zona Norte", "Zona Sul"
+    isFallback: boolean;
 }
 
 // Fallback generic data
@@ -891,20 +892,28 @@ const data: Record<string, NeighborhoodData> = {
     }
 };
 
-export const getNeighborhoodData = (slug: string): NeighborhoodData => {
+export const getNeighborhoodData = (slug: string): NeighborhoodData | null => {
     const normalizedSlug = toSlug(slug);
     const specificData = data[normalizedSlug];
 
     if (specificData) {
-        return specificData;
+        return {
+            ...specificData,
+            isFallback: false,
+        };
     }
 
-    // Try to find the original name from the allBairros list
-    const originalName = allBairros.find(b => toSlug(b) === normalizedSlug) || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    // If the slug exists in the curated neighborhoods list but has no dedicated copy yet,
+    // keep the page accessible with generic content and mark as fallback.
+    const originalName = allBairros.find((bairro) => toSlug(bairro) === normalizedSlug);
+    if (!originalName) {
+        return null;
+    }
 
     return {
         slug: normalizedSlug,
         name: originalName,
-        ...defaultNeighborhoodData
+        ...defaultNeighborhoodData,
+        isFallback: true,
     };
 };

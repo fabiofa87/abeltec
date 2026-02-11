@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { MapPin, Phone, Clock, Mail } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,11 +27,31 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Serviços</h4>
             <ul className="space-y-2 text-sm text-secondary-foreground/80">
-              <li>• Reparo de Geladeiras</li>
-              <li>• Conserto de Freezers</li>
-              <li>• Máquinas de Lavar</li>
-              <li>• Manutenção Preventiva</li>
-              <li>• Instalação de Equipamentos</li>
+              <li>
+                <Link className="hover:text-secondary-foreground transition-colors" to="/">
+                  Reparo de Geladeiras
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-secondary-foreground transition-colors" to="/maquina-de-lavar">
+                  Conserto de Máquina de Lavar
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-secondary-foreground transition-colors" to="/#bairros">
+                  Bairros Atendidos no RJ
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-secondary-foreground transition-colors" to="/bairros/tijuca">
+                  Técnico em Tijuca
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-secondary-foreground transition-colors" to="/bairros/copacabana">
+                  Técnico em Copacabana
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -48,7 +69,7 @@ const Footer = () => {
                   <li>Zona Sul</li>
                   <li>Barra da Tijuca</li>
                   <li>Recreio dos Bandeirantes</li>
-                  <li>Jacarépaguá</li>
+                  <li>Jacarepaguá</li>
                   <li>E Muitos outros</li>
                 </ul>
               </div>

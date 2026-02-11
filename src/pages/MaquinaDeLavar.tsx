@@ -5,18 +5,55 @@ import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, WashingMachine, CheckCircle, Shield } from "lucide-react";
 
 const MaquinaDeLavar = () => {
+    const baseUrl = "https://www.abeltecrefrigeracao.com";
+    const canonicalUrl = `${baseUrl}/maquina-de-lavar`;
+    const ogImageUrl = `${baseUrl}/placeholder.svg`;
+
     return (
         <>
             <Helmet>
-                <title>Conserto de Máquina de Lavar - Assistência Técnica RJ | ABELTEC</title>
+                <title>Conserto de Máquina de Lavar 24h RJ | ABELTEC</title>
                 <meta
                     name="description"
-                    content="Sua máquina de lavar parou? Conserto de Lava e Seca e Máquinas de Lavar de todas as marcas (Brastemp, Electrolux, Samsung, LG). Peças originais e garantia."
+                    content="Conserto de máquina de lavar 24h no Rio de Janeiro. Atendimento rápido para lava e seca de todas as marcas com garantia por escrito."
                 />
+                <link rel="canonical" href={canonicalUrl} />
+                <meta name="robots" content="index,follow" />
                 <meta name="geo.region" content="BR-RJ" />
                 <meta name="geo.placename" content="Rio de Janeiro" />
                 <meta name="geo.position" content="-22.9068;-43.1729" />
                 <meta name="ICBM" content="-22.9068, -43.1729" />
+                <meta property="og:title" content="Conserto de Máquina de Lavar 24h RJ | ABELTEC" />
+                <meta property="og:description" content="Atendimento rápido para máquina de lavar e lava e seca com técnicos especializados no RJ." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={canonicalUrl} />
+                <meta property="og:image" content={ogImageUrl} />
+                <meta property="og:image:alt" content="Conserto de máquina de lavar 24h no Rio de Janeiro" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Conserto de Máquina de Lavar 24h RJ | ABELTEC" />
+                <meta name="twitter:description" content="Conserto de máquina de lavar e lava e seca 24h no Rio de Janeiro com garantia." />
+                <meta name="twitter:image" content={ogImageUrl} />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Conserto de Máquina de Lavar no Rio de Janeiro",
+                        "url": canonicalUrl,
+                        "description": "Assistência técnica para máquinas de lavar e lava e seca, com atendimento 24h no Rio de Janeiro.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "ABELTEC Refrigeração",
+                            "url": baseUrl,
+                            "telephone": "+5521987636363",
+                            "openingHours": "Mo-Su 00:00-24:00",
+                            "priceRange": "$$"
+                        },
+                        "areaServed": {
+                            "@type": "AdministrativeArea",
+                            "name": "Rio de Janeiro"
+                        }
+                    })}
+                </script>
             </Helmet>
 
             <div className="min-h-screen flex flex-col">
@@ -30,7 +67,7 @@ const MaquinaDeLavar = () => {
                                 </div>
                             </div>
                             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                                Conserto de <span className="text-accent">Máquina de Lavar</span>
+                                Conserto de <span className="text-accent">Máquina de Lavar 24h</span>
                             </h1>
                             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
                                 Assistência técnica especializada em Lavadoras e Lava e Seca.

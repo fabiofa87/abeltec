@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,18 +8,26 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="bg-[image:var(--gradient-hero)] p-2 rounded-lg">
+            <Link to="/" className="bg-[image:var(--gradient-hero)] p-2 rounded-lg" aria-label="Ir para a página inicial da ABELTEC">
               <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
                 <span className="text-primary font-bold text-lg">A</span>
               </div>
-            </div>
+            </Link>
             <div>
-              <h1 className="text-xl font-bold text-foreground">ABELTEC</h1>
+              <p className="text-xl font-bold text-foreground">ABELTEC</p>
               <p className="text-sm text-muted-foreground">Refrigeração Especializada</p>
             </div>
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
+            <nav className="flex items-center gap-4 text-sm">
+              <Link className="text-muted-foreground hover:text-foreground transition-colors" to="/">
+                Home
+              </Link>
+              <Link className="text-muted-foreground hover:text-foreground transition-colors" to="/maquina-de-lavar">
+                Máquina de Lavar
+              </Link>
+            </nav>
             <div className="flex items-center text-sm text-muted-foreground">
               <MapPin className="w-4 h-4 mr-1" />
               Atendimento 24h

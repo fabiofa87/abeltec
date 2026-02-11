@@ -21,9 +21,9 @@ const Hero = () => {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold leading-tight font-heading">
-                Assistência Técnica em
-                <span className="text-accent"> Geladeiras</span> e
-                <span className="text-accent"> Máquinas</span>
+                Conserto de
+                <span className="text-accent"> Geladeiras 24h</span> e
+                <span className="text-accent"> Máquinas de Lavar</span>
               </h1>
 
               <p className="text-xl text-white/90 max-w-lg font-body">

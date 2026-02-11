@@ -9,13 +9,17 @@ import Testimonials from "@/components/Testimonials";
 import Bairros from "@/components/Bairros";
 
 const Index = () => {
+  const baseUrl = "https://www.abeltecrefrigeracao.com";
+  const canonicalUrl = `${baseUrl}/`;
+  const ogImageUrl = `${baseUrl}/placeholder.svg`;
+
   return (
     <>
       <Helmet>
-        <title>ABELTEC - Assistência Técnica Geladeiras e Máquinas de Lavar - 24h</title>
+        <title>Conserto de Geladeira 24h RJ | ABELTEC</title>
         <meta
           name="description"
-          content="GELADEIRA PAROU? Atendimento 24h inclusive aos domingos e feriados no Rio de Janeiro. Conserto de geladeiras e máquinas de lavar com até 1 ano de garantia."
+          content="GELADEIRA PAROU? Atendimento 24h no Rio de Janeiro, inclusive domingos e feriados. Chame no WhatsApp e receba diagnóstico com garantia por escrito."
         />
         <meta name="keywords" content="técnico geladeira, conserto geladeira, troca de motor geladeira,
         conserto geladeira electrolux,
@@ -25,17 +29,23 @@ const Index = () => {
         conserto de geladeira zona sul, conserto de geladeira barra,
         conserto de geladeira perto de mim, conserto de geladeira hoje, conserto geladeira emergência,
          assistência técnica, máquina lavar, freezer, refrigeração, Abel, ABELTEC" />
-        <link rel="canonical" href="https://www.abeltecrefrigeracao.com" />
+        <link rel="canonical" href={canonicalUrl} />
 
         <meta name="geo.region" content="BR-RJ" />
         <meta name="geo.placename" content="Rio de Janeiro" />
         <meta name="geo.position" content="-22.9068;-43.1729" />
         <meta name="ICBM" content="-22.9068, -43.1729" />
 
-        <meta property="og:title" content="Conserto de Geladeiras Emergência - ABELTEC - Assistência Técnica Geladeiras 24h" />
-        <meta property="og:description" content="Mais de 20 anos de experiência em conserto de geladeiras e máquinas de lavar. Atendimento 24h com garantia." />
+        <meta property="og:title" content="Conserto de Geladeira 24h no RJ | ABELTEC" />
+        <meta property="og:description" content="Atendimento 24h para conserto de geladeiras e máquinas de lavar no Rio de Janeiro. Fale conosco e resolva hoje." />
         <meta property="og:type" content="business.business" />
-        <meta property="og:image" content="/hero-technician.png" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image:alt" content="Assistência técnica ABELTEC para conserto de geladeira 24h no Rio de Janeiro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Conserto de Geladeira 24h RJ | ABELTEC" />
+        <meta name="twitter:description" content="Atendimento 24h no Rio de Janeiro para conserto de geladeiras e máquinas de lavar." />
+        <meta name="twitter:image" content={ogImageUrl} />
 
         <script type="application/ld+json">
           {JSON.stringify({
@@ -152,8 +162,8 @@ const Index = () => {
               "bestRating": "5",
               "worstRating": "1"
             },
-            "url": "https://www.abeltecrefrigeracao.com.br",
-            "logo": "https://www.abeltecrefrigeracao.com.br/logo.png",
+            "url": baseUrl,
+            "logo": ogImageUrl,
             "description": "Assistência técnica especializada em geladeiras, freezers e máquinas de lavar no Rio de Janeiro e Grande Rio.",
             "contactPoint": {
               "@type": "ContactPoint",
