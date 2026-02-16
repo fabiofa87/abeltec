@@ -20,7 +20,7 @@ export const defaultNeighborhoodData: Omit<NeighborhoodData, 'slug' | 'name'> = 
     zones: []
 };
 
-const data: Record<string, NeighborhoodData> = {
+const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
     "abolicao": {
         slug: "abolicao",
         name: "Abolição",
@@ -444,6 +444,15 @@ const data: Record<string, NeighborhoodData> = {
         landmarks: ["Metrô Inhaúma", "Cemitério de Inhaúma"],
         zones: ["Zona Norte"]
     },
+    "jacarepagua": {
+        slug: "jacarepagua",
+        name: "Jacarepaguá",
+        description: "Cobertura total em Jacarepaguá. Atendemos todas as sub-regiões com técnicos especializados em geladeiras domésticas e comerciais.",
+        mainStreets: ["Estrada de Jacarepaguá", "Avenida Geremário Dantas", "Estrada do Gabinal"],
+        avgArrival: "30-50 min",
+        landmarks: ["Largo do Tanque", "Qualistage"],
+        zones: ["Zona Oeste"]
+    },
     "ipanema": {
         slug: "ipanema",
         name: "Ipanema",
@@ -458,6 +467,15 @@ const data: Record<string, NeighborhoodData> = {
         landmarks: ["Lagoa Rodrigo de Freitas", "Parque da Catacumba"],
         zones: ["Zona Sul"]
     },
+    "iraja": {
+        slug: "iraja",
+        name: "Irajá",
+        description: "Atendemos o bairro de Irajá com prontidão. Se sua geladeira parou, nossa equipe no subúrbio chega rápido para realizar o conserto com garantia por escrito.",
+        mainStreets: ["Avenida Monsenhor Félix", "Estrada da Água Grande", "Avenida Brasil"],
+        avgArrival: "25-40 min",
+        landmarks: ["Via Brasil Shopping", "Cemitério de Irajá"],
+        zones: ["Zona Norte"]
+    },
     "laranjeiras": {
         slug: "laranjeiras",
         name: "Laranjeiras",
@@ -465,6 +483,15 @@ const data: Record<string, NeighborhoodData> = {
         mainStreets: ["Rua das Laranjeiras", "Rua Pinheiro Machado", "Rua Alice"],
         avgArrival: "20-35 min",
         landmarks: ["Parque Guinle", "Palácio Guanabara", "Fluminense FC"],
+        zones: ["Zona Sul"]
+    },
+    "lagoa": {
+        slug: "lagoa",
+        name: "Lagoa",
+        description: "Atendimento rápido e especializado no bairro da Lagoa Rodrigo de Freitas. Nossos técnicos estão sempre circulando pela região para garantir o conserto da sua geladeira com agilidade e peças originais.",
+        mainStreets: ["Avenida Epitácio Pessoa", "Avenida Borges de Medeiros", "Rua Fonte da Saudade"],
+        avgArrival: "20-30 min",
+        landmarks: ["Lagoa Rodrigo de Freitas", "Parque da Catacumba", "Clube de Regatas do Flamengo"],
         zones: ["Zona Sul"]
     },
     "leblon": {

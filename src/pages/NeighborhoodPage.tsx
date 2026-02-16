@@ -65,11 +65,7 @@ const NeighborhoodPage = () => {
                     content={`Conserto de geladeira 24h em ${bairroName}. ${neighborhoodData.description} Chegamos em ${neighborhoodData.avgArrival} e atendemos com garantia por escrito.`}
                 />
                 <link rel="canonical" href={canonicalUrl} />
-                {neighborhoodData.isFallback ? (
-                    <meta name="robots" content="noindex,follow" />
-                ) : (
-                    <meta name="robots" content="index,follow" />
-                )}
+                <meta name="robots" content="index,follow" />
                 <meta name="geo.region" content="BR-RJ" />
                 <meta name="geo.placename" content={`Rio de Janeiro - ${bairroName}`} />
                 {/* Coordinates could be dynamic if we had a database, but sticking to RJ center is acceptable for now or removing tailored coords */}
