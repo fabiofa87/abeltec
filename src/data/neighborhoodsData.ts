@@ -30,6 +30,15 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         landmarks: ["Engenhão (próximo)", "Norte Shopping (próximo)"],
         zones: ["Zona Norte"]
     },
+    "acari": {
+        slug: "acari",
+        name: "Acari",
+        description: "Atendemos Acari com agilidade e segurança. Nossa equipe conhece bem a região e garante um serviço eficiente.",
+        mainStreets: ["Avenida Brasil", "Estrada do Camboatá"],
+        avgArrival: "30-45 min",
+        landmarks: ["Parque Acari", "Rio Acari"],
+        zones: ["Zona Norte"]
+    },
     "agua-santa": {
         slug: "agua-santa",
         name: "Água Santa",
@@ -74,6 +83,15 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         avgArrival: "30-50 min",
         landmarks: ["Praia dos Bancários"],
         zones: ["Zona Norte", "Ilha do Governador"]
+    },
+    "bangu": {
+        slug: "bangu",
+        name: "Bangu",
+        description: "Com forte presença na Zona Oeste, realizamos atendimentos rápidos em Bangu, sempre com qualidade e compromisso.",
+        mainStreets: ["Rua Silva Cardoso", "Avenida Santa Cruz"],
+        avgArrival: "30-45 min",
+        landmarks: ["Bangu Shopping", "Estádio Proletário Guilherme da Silveira Filho"],
+        zones: ["Zona Oeste"]
     },
     "barra-da-tijuca": {
         slug: "barra-da-tijuca",
@@ -156,6 +174,15 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         landmarks: ["Mergulhão Clara Nunes", "Supermercados Presunic"],
         zones: ["Zona Norte"]
     },
+    "campo-grande": {
+        slug: "campo-grande",
+        name: "Campo Grande",
+        description: "Em Campo Grande oferecemos atendimento ágil, cobrindo toda a região com técnicos preparados.",
+        mainStreets: ["Avenida Cesário de Melo", "Estrada do Mendanha"],
+        avgArrival: "40-60 min",
+        landmarks: ["West Shopping", "Calçadão de Campo Grande"],
+        zones: ["Zona Oeste"]
+    },
     "cascadura": {
         slug: "cascadura",
         name: "Cascadura",
@@ -200,6 +227,15 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         avgArrival: "20-40 min",
         landmarks: ["Arcos da Lapa", "Candelária", "Central do Brasil"],
         zones: ["Centro"]
+    },
+    "charitas": {
+        slug: "charitas",
+        name: "Charitas",
+        description: "Atendimento especializado em Charitas, com deslocamento rápido pela orla e regiões próximas.",
+        mainStreets: ["Avenida Prefeito Silvio Picanço", "Rua Eurico Manoel do Carmo"],
+        avgArrival: "20-30 min",
+        landmarks: ["Praia de Charitas", "Estação Charitas (Catamarã)"],
+        zones: ["Zona Sul", "Niterói"]
     },
     "cidade-nova": {
         slug: "cidade-nova",
@@ -263,6 +299,24 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         avgArrival: "25-40 min",
         landmarks: ["Estação do Trem do Corcovado", "Largo do Boticário"],
         zones: ["Zona Sul"]
+    },
+    "cruz-vermelha": {
+        slug: "cruz-vermelha",
+        name: "Cruz Vermelha",
+        description: "Na região central da Cruz Vermelha, oferecemos atendimento rápido e eficiente.",
+        mainStreets: ["Praça da Cruz Vermelha", "Rua do Senado"],
+        avgArrival: "20-30 min",
+        landmarks: ["Hospital da Cruz Vermelha", "INCA"],
+        zones: ["Centro"]
+    },
+    "curicica": {
+        slug: "curicica",
+        name: "Curicica",
+        description: "Cobrimos Curicica com agilidade, garantindo suporte rápido em toda a região.",
+        mainStreets: ["Estrada dos Bandeirantes", "Rua André Rocha"],
+        avgArrival: "30-45 min",
+        landmarks: ["Projac", "TransOlímpica"],
+        zones: ["Zona Oeste"]
     },
     "del-castilho": {
         slug: "del-castilho",
@@ -426,6 +480,15 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         landmarks: ["Cobal do Humaitá", "Largo dos Leões"],
         zones: ["Zona Sul"]
     },
+    "icarai": {
+        slug: "icarai",
+        name: "Icaraí",
+        description: "Em Icaraí realizamos atendimentos rápidos, com fácil acesso pela orla e ruas principais.",
+        mainStreets: ["Rua Ator Paulo Gustavo", "Rua Moreira César"],
+        avgArrival: "20-30 min",
+        landmarks: ["Praia de Icaraí", "Campo de São Bento"],
+        zones: ["Zona Sul", "Niterói"]
+    },
     "ilha-do-governador": {
         slug: "ilha-do-governador",
         name: "Ilha do Governador",
@@ -476,6 +539,33 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         landmarks: ["Via Brasil Shopping", "Cemitério de Irajá"],
         zones: ["Zona Norte"]
     },
+    "itanhanga": {
+        slug: "itanhanga",
+        name: "Itanhangá",
+        description: "No Itanhangá oferecemos atendimento eficiente, inclusive em áreas residenciais e condomínios.",
+        mainStreets: ["Estrada da Barra da Tijuca", "Estrada do Itanhangá"],
+        avgArrival: "30-45 min",
+        landmarks: ["Clube Itanhangá", "Pedra da Gávea"],
+        zones: ["Zona Oeste"]
+    },
+    "jacare": {
+        slug: "jacare",
+        name: "Jacaré",
+        description: "Atendemos o Jacaré com rapidez, aproveitando o fácil acesso pela Avenida Brasil.",
+        mainStreets: ["Avenida Brasil", "Rua Lino Teixeira"],
+        avgArrival: "30-45 min",
+        landmarks: ["Viaduto do Jacaré"],
+        zones: ["Zona Norte"]
+    },
+    "jurujuba": {
+        slug: "jurujuba",
+        name: "Jurujuba",
+        description: "Em Jurujuba garantimos atendimento ágil, inclusive nas áreas próximas à orla.",
+        mainStreets: ["Avenida Carlos Ermelindo Marins", "Rua Lauro Sodré"],
+        avgArrival: "20-30 min",
+        landmarks: ["Praia de Jurujuba", "Forte da Imbuí"],
+        zones: ["Zona Sul", "Niterói"]
+    },
     "laranjeiras": {
         slug: "laranjeiras",
         name: "Laranjeiras",
@@ -493,6 +583,15 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         avgArrival: "20-30 min",
         landmarks: ["Lagoa Rodrigo de Freitas", "Parque da Catacumba", "Clube de Regatas do Flamengo"],
         zones: ["Zona Sul"]
+    },
+    "lapa": {
+        slug: "lapa",
+        name: "Lapa",
+        description: "Na Lapa atendemos com rapidez, mesmo em horários de maior movimento.",
+        mainStreets: ["Rua do Lavradio", "Avenida Mem de Sá"],
+        avgArrival: "20-30 min",
+        landmarks: ["Arcos da Lapa", "Escadaria Selarón"],
+        zones: ["Centro"]
     },
     "leblon": {
         slug: "leblon",
@@ -665,6 +764,24 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         landmarks: ["Praça Seca", "Estação BRT Praça Seca"],
         zones: ["Zona Oeste"]
     },
+    "praia-de-sao-francisco": {
+        slug: "praia-de-sao-francisco",
+        name: "Praia de São Francisco",
+        description: "Atendimento rápido na Praia de São Francisco, com fácil acesso pela orla.",
+        mainStreets: ["Avenida Quintino Bocaiúva"],
+        avgArrival: "20-30 min",
+        landmarks: ["Praia de São Francisco"],
+        zones: ["Zona Sul", "Niterói"]
+    },
+    "praia-do-dende": {
+        slug: "praia-do-dende",
+        name: "Praia do Dendê",
+        description: "Na Praia do Dendê oferecemos atendimento ágil em toda a região da Ilha.",
+        mainStreets: ["Estrada do Dendê"],
+        avgArrival: "30-45 min",
+        landmarks: ["Praia do Dendê"],
+        zones: ["Ilha do Governador"]
+    },
     "quintino-bocaiuva": {
         slug: "quintino-bocaiuva",
         name: "Quintino Bocaiúva",
@@ -746,6 +863,24 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         landmarks: ["Estação do Sampaio"],
         zones: ["Zona Norte"]
     },
+    "santa-teresa": {
+        slug: "santa-teresa",
+        name: "Santa Teresa",
+        description: "Atendemos Santa Teresa com atenção especial às vias históricas e acesso por ladeiras.",
+        mainStreets: ["Rua Almirante Alexandrino", "Rua Paschoal Carlos Magno"],
+        avgArrival: "30-45 min",
+        landmarks: ["Parque das Ruínas", "Largo dos Guimarães"],
+        zones: ["Centro", "Zona Sul"]
+    },
+    "santo-cristo": {
+        slug: "santo-cristo",
+        name: "Santo Cristo",
+        description: "Em Santo Cristo garantimos atendimento rápido, próximo à região portuária.",
+        mainStreets: ["Rua Santo Cristo", "Avenida Rodrigues Alves"],
+        avgArrival: "20-30 min",
+        landmarks: ["Rodoviária Novo Rio", "AquaRio"],
+        zones: ["Centro"]
+    },
     "sao-conrado": {
         slug: "sao-conrado",
         name: "São Conrado",
@@ -772,6 +907,15 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         avgArrival: "20-30 min",
         landmarks: ["Estação São Francisco Xavier", "Igreja São Francisco Xavier"],
         zones: ["Zona Norte"]
+    },
+    "sulacap": {
+        slug: "sulacap",
+        name: "Sulacap",
+        description: "Atendimento rápido em Sulacap, cobrindo áreas residenciais e comerciais.",
+        mainStreets: ["Avenida Marechal Fontenelle", "Estrada do Catonho"],
+        avgArrival: "30-45 min",
+        landmarks: ["Shopping Sulacap"],
+        zones: ["Zona Oeste"]
     },
     "tanque": {
         slug: "tanque",
@@ -827,6 +971,15 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         landmarks: ["Estação de Tomás Coelho"],
         zones: ["Zona Norte"]
     },
+    "triagem": {
+        slug: "triagem",
+        name: "Triagem",
+        description: "Na região de Triagem oferecemos atendimento ágil com fácil acesso às vias principais.",
+        mainStreets: ["Rua Ceará", "Rua Figueira de Melo"],
+        avgArrival: "20-30 min",
+        landmarks: ["Estação de Triagem"],
+        zones: ["Zona Norte"]
+    },
     "turiacu": {
         slug: "turiacu",
         name: "Turiaçu",
@@ -844,6 +997,33 @@ const data: Record<string, Omit<NeighborhoodData, 'isFallback'>> = {
         avgArrival: "25-40 min",
         landmarks: ["Pão de Açúcar", "Praia Vermelha", "Mureta da Urca"],
         zones: ["Zona Sul"]
+    },
+    "usina": {
+        slug: "usina",
+        name: "Usina",
+        description: "Atendemos a Usina com rapidez, especialmente nas áreas residenciais próximas à Tijuca.",
+        mainStreets: ["Rua Conde de Bonfim", "Rua Haddock Lobo"],
+        avgArrival: "20-30 min",
+        landmarks: ["Morro da Formiga"],
+        zones: ["Zona Norte"]
+    },
+    "vargem-grande": {
+        slug: "vargem-grande",
+        name: "Vargem Grande",
+        description: "Em Vargem Grande atendemos com agilidade, inclusive em condomínios e áreas mais afastadas.",
+        mainStreets: ["Estrada dos Bandeirantes", "Estrada do Sacarrão"],
+        avgArrival: "40-60 min",
+        landmarks: ["Rio Water Planet (antigo parque aquático)"],
+        zones: ["Zona Oeste"]
+    },
+    "vargem-pequena": {
+        slug: "vargem-pequena",
+        name: "Vargem Pequena",
+        description: "Cobrimos Vargem Pequena com deslocamento rápido pela Estrada dos Bandeirantes.",
+        mainStreets: ["Estrada dos Bandeirantes", "Rua Jornalista Luiz Eduardo Lobo"],
+        avgArrival: "30-45 min",
+        landmarks: ["Haras locais", "Condomínios residenciais"],
+        zones: ["Zona Oeste"]
     },
     "vaz-lobo": {
         slug: "vaz-lobo",
